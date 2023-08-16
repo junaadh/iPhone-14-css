@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>iPhone 14 Pro Max</title>
+</head>
+<body class="bg-slate-500">
+    <div class="h-full w-screen">
+        <div class="flex w-full justify-center items-center">
+            <a href="animation.html" class="py-2 px-2 bg-blue-500 text-white rounded-full mt-5 mb-5 hover:bg-blue-800 active:bg-purple-800 mx-5">animation 1</a>
+            <a href="animation2.html" class="py-2 px-2 bg-blue-500 text-white rounded-full mt-5 mb-5 hover:bg-blue-800 active:bg-purple-800 mx-5">animation 2</a>
+        </div>
+        <div id="change-color" class="relative flex w-full justify-center items-center mb-3">
+            <button id="black" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden border border-white animate-bounce">
+                <img src="assets/black.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
+            </button>
+            <button id="gold" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden">
+                <img src="assets/gold.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
+            </button>
+            <button id="silver" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden">
+                <img src="assets/silver.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
+            </button>
+            <button id="purple" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden">
+                <img src="assets/purple.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
+            </button>
+        </div>        
+        <div class="relative h-full w-full flex items-center justify-center">
+            <div id="frame" class="h-[855px] w-[401px] bg-purple-800 rounded-[55px] flex items-center justify-center relative">
+                <div id="bezel" class="h-[853px] w-[399px] bg-black rounded-[55px] flex items-center justify-center absolute">
+                    <div id="screen" class="h-[844px] w-[390px] rounded-[51px] flex relative">
+                        <img id="wallpaper" src="assets/black.jpg" class="absolute rounded-[55px] block w-[390px] h-[844px]" alt="">
+                        <div id="dyn-island" class="box-border w-[104px] h-7 bg-black rounded-full absolute top-[10px] left-[143px] items-center">
+                            <div id="camera" class="w-[24px] h-[24px] bg-slate-950 rounded-full absolute top-[2px] right-[2px] flex items-center justify-center">
+                                <div class="w-[13px] h-[13px] bg-indigo-950 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div id="dyn-island-aod" class="hidden box-border w-[130px] h-7 bg-black rounded-full absolute top-[10px] left-[130px] items-center">
+                            <div id="camera" class="w-[24px] h-[24px] bg-slate-950 rounded-full absolute top-[2px] right-[12px] flex items-center justify-center">
+                                <div class="w-[13px] h-[13px] bg-indigo-950 rounded-full"></div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="white" class="absolute top-[8px] left-[6px]" viewBox="0 0 16 16">
+                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                            </svg>
+                        </div>
+                        <div id="dyn-island-silent" class="hidden box-border w-[190px] h-7 bg-black rounded-full absolute top-[10px] left-[100px] items-center">
+                            <div id="camera" class="w-[24px] h-[24px] bg-slate-950 rounded-full absolute top-[2px] right-[42px] flex items-center justify-center">
+                                <div class="w-[13px] h-[13px] bg-indigo-950 rounded-full"></div>
+                            </div>
+                            <div id="ringer-background" class="bg-red-700 absolute top-1 left-1 h-[20px] w-[34px] rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="absolute top-[2px] left-[8px] -scale-x-[1]" viewBox="0 0 16 16">
+                                    <path d="M5.164 14H15c-1.5-1-2-5.902-2-7 0-.264-.02-.523-.06-.776L5.164 14zm6.288-10.617A4.988 4.988 0 0 0 8.995 2.1a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 7c0 .898-.335 4.342-1.278 6.113l9.73-9.73zM10 15a2 2 0 1 1-4 0h4zm-9.375.625a.53.53 0 0 0 .75.75l14.75-14.75a.53.53 0 0 0-.75-.75L.625 15.625z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm text-red-700 absolute right-2 top-1">silent</h4>
+                        </div>
+                        <div id="dyn-island-ring" class="hidden box-border w-[190px] h-7 bg-black rounded-full absolute top-[10px] left-[100px] items-center">
+                            <div id="camera" class="w-[24px] h-[24px] bg-slate-950 rounded-full absolute top-[2px] right-[42px] flex items-center justify-center">
+                                <div class="w-[13px] h-[13px] bg-indigo-950 rounded-full"></div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="absolute top-[7px] left-[8px]" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                            </svg>
+                            <h4 class="text-sm text-white absolute right-2 top-1">Ring</h4>
+                        </div>
+                        <div id="status-bar" class="relative">
+                            <h3 id="carrier" class="text-white text-base absolute top-[12px] left-16">Digi</h3>
+                            <div id="right" class="relative">
+                                <div id="signal" class="absolute">
+                                    <div class="box-border h-[8px] w-[3px] bg-white rounded-full absolute left-[265px] top-[22px]"></div>
+                                    <div class="box-border h-[10px] w-[3px] bg-white rounded-full absolute left-[271px] top-[20px]"></div>
+                                    <div class="box-border h-[12px] w-[3px] bg-white rounded-full absolute left-[277px] top-[18px]"></div>
+                                    <div class="box-border h-[14px] w-[3px] bg-white rounded-full absolute left-[283px] top-[16px]"></div>
+                                </div>
+                                <div id="data" class="absolute text-white text-base top-[11px] left-[293px]">5G</div>
+                                <div id="battery" class="box-border bg-white h-[14px] w-[24px] absolute top-[16px] left-[320px] rounded-[5px]">
+                                    <h4 id="battery-percentage" class="text-gray-600 text-xs absolute -top-[1px] left-[1px]">100</h4>
+                                </div>
+                                <div id="battery-tip" class="box-border bg-white h-[4px] w-[3px] absolute top-[20.5px] left-[346px] rounded-r-xl"></div>
+                                <div id="control-center" class="box-border bg-white absolute h-[2px] w-[54px] rounded-full top-[36px] left-[279px]"></div>
+                            </div>
+                        </div>
+                        <div id="datetime" class="relative">
+                            <h2 id="date" class="text-white text-xl whitespace-nowrap absolute top-20 text-center w-[390px] h-7"></h2>
+                            <h1 id="time" class="text-white text-8xl absolute top-24 text-center w-[390px] h-28 mt-3"></h1>
+                        </div>
+                        <div id="player" class="hidden w-[376px] h-[150px] bg-opacity-[60%] bg-slate-700 absolute top-[590px] left-[7px] rounded-3xl">
+                            <img src="" alt="" height="50px" width="50px" id="cover" class="rounded-xl absolute top-3 left-3">
+                            <h1 id="title" class="text-white absolute text-[16px] left-[70px] top-[16px]"></h1>
+                            <h2 id="artist" class="text-slate-400 absolute text-[12px] left-[70px] top-[40px]"></h2>
+                            <div id="playback" class="h-1 w-[276px] absolute top-[80px] left-[50px] bg-gray-400">
+                                <div id="scrubber" class="h-1 w-[35%] absolute bg-white"></div>
+                            </div>
+                            <h3 id="elapsed" class="text-slate-400 text-[10px] absolute top-[75px] left-[16px]"></h3>
+                            <h3 id="length" class="text-slate-400 text-[10px] absolute top-[75px] right-[16px]"></h3>
+                            <button id="playpause" class="absolute left-[168px] top-[95px]">
+                                <svg id="play" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="hidden" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                              </svg>
+                              <svg id="pause" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="" viewBox="0 0 16 16">
+                                <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                              </svg>
+                            </button>
+                            <button id="prev" class="absolute top-[102px] left-[100px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="" viewBox="0 0 16 16">
+                                <path d="M8.404 7.304a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L8.404 7.304Z"/>
+                                <path d="M.404 7.304a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L.404 7.304Z"/>
+                                </svg>
+                            </button>
+                            <button id="next" class="absolute top-[102px] right-[100px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="" viewBox="0 0 16 16">
+                                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="quick-dials" class="absolute w-full h-[60px] bottom-[30px]">
+                            <div id="camera" class="absolute bg-opacity-[40%] w-[45px] h-[45px] right-[35px] rounded-full bg-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="absolute top-[9px] left-[10px] -scale-x-[1]" viewBox="0 0 16 16">
+                                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                                  </svg>
+                            </div>
+                            <div id="torch" class="absolute bg-opacity-[40%] w-[45px] h-[45px] left-[35px] rounded-full bg-slate-500">
+                                <svg width="25" height="25" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M1497 4989 c-93 -22 -173 -89 -216 -179 -24 -52 -26 -66 -29 -242 l-4 -188 1252 0 1252 0 -4 188 c-3 176 -5 190 -29 242 -33 70 -89 126 -159 159 l-55 26 -985 2 c-557 1 -1001 -3 -1023 -8z"/>
+                                    <path d="M1264 3998 c21 -193 69 -359 148 -509 59 -114 124 -195 236 -296 93 -85 164 -185 201 -286 l26 -72 5 -1300 c5 -1295 5 -1300 26 -1346 44 -94 123 -157 222 -178 70 -14 658 -15 738 0 103 19 183 81 228 178 21 46 21 50 26 1376 l5 1330 26 66 c49 127 107 206 233 316 123 109 197 210 262 362 36 82 77 250 89 359 l7 62 -1242 0 -1243 0 7 -62z m1374 -1218 c71 -36 115 -83 149 -158 34 -72 30 -192 -7 -265 -62 -123 -194 -187 -337 -165 -72 11 -129 44 -181 103 -51 58 -72 119 -72 209 0 122 61 220 172 276 52 26 72 30 138 30 66 0 86 -4 138 -30z"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <div id="pill" class="box-border w-[146px] h-1 bg-white rounded-full absolute bottom-[12px] left-[123px]"></div>
+                    </div>
+                </div>
+                <div id="side" class="relative">
+                    <button id="power" class="absolute bg-slate-700 w-[6px] h-[80px] left-[200px] bottom-[170px] rounded-r-md"></button>
+                    <button id="volume-up" class="absolute bg-slate-700 w-[6px] h-[60px] right-[200px] bottom-[200px] rounded-l-md"></button>
+                    <button id="volume-down" class="absolute bg-slate-700 w-[6px] h-[60px] right-[200px] bottom-[125px] rounded-l-md"></button>
+                    <button id="mute" class="absolute bg-slate-700 w-[6px] h-[30px] right-[200px] bottom-[270px] rounded-l-md"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
