@@ -8,11 +8,7 @@
 </head>
 <body class="bg-slate-500">
     <div class="h-full w-screen">
-        <div class="flex w-full justify-center items-center">
-            <a href="animation.html" class="py-2 px-2 bg-blue-500 text-white rounded-full mt-5 mb-5 hover:bg-blue-800 active:bg-purple-800 mx-5">animation 1</a>
-            <a href="animation2.html" class="py-2 px-2 bg-blue-500 text-white rounded-full mt-5 mb-5 hover:bg-blue-800 active:bg-purple-800 mx-5">animation 2</a>
-        </div>
-        <div id="change-color" class="relative flex w-full justify-center items-center mb-3">
+        <div id="change-color" class="relative flex w-full justify-center items-center my-3">
             <button id="black" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden border border-white animate-bounce">
                 <img src="assets/black.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
             </button>
@@ -24,6 +20,11 @@
             </button>
             <button id="purple" class="w-[30px] h-[30px] mx-3 rounded-[50%] overflow-hidden">
                 <img src="assets/purple.jpg" class="w-full h-full rounded-[50%] object-cover" alt="">
+            </button>
+            <button id="spotify">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mx-3" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                </svg>
             </button>
         </div>        
         <div class="relative h-full w-full flex items-center justify-center">
@@ -74,10 +75,12 @@
                                     <div class="box-border h-[14px] w-[3px] bg-white rounded-full absolute left-[283px] top-[16px]"></div>
                                 </div>
                                 <div id="data" class="absolute text-white text-base top-[11px] left-[293px]">5G</div>
-                                <div id="battery" class="box-border bg-white h-[14px] w-[24px] absolute top-[16px] left-[320px] rounded-[5px]">
-                                    <h4 id="battery-percentage" class="text-gray-600 text-xs absolute -top-[1px] left-[1px]">100</h4>
+                                <div id="battery" class="z-2 box-border bg-gray-400/90 h-[14px] w-[24px] relative top-[16px] left-[320px] rounded-[5px]">
+                                    <div id="battery-indicator" class="z-1 bg-white h-full rounded-l-[5px]">
+                                    </div>
                                 </div>
-                                <div id="battery-tip" class="box-border bg-white h-[4px] w-[3px] absolute top-[20.5px] left-[346px] rounded-r-xl"></div>
+                                <h4 id="battery-percentage" class="z-0 font-bold text-slate-600 flex text-xs absolute top-[15px] left-[325px]"></h4>
+                                <div id="battery-tip" class="box-border bg-gray-400/90 h-[4px] w-[3px] absolute top-[20.5px] left-[346px] rounded-r-xl"></div>
                                 <div id="control-center" class="box-border bg-white absolute h-[2px] w-[54px] rounded-full top-[36px] left-[279px]"></div>
                             </div>
                         </div>
@@ -123,10 +126,7 @@
                                   </svg>
                             </div>
                             <div id="torch" class="absolute bg-opacity-[40%] w-[45px] h-[45px] left-[35px] rounded-full bg-slate-500">
-                                <svg width="25" height="25" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M1497 4989 c-93 -22 -173 -89 -216 -179 -24 -52 -26 -66 -29 -242 l-4 -188 1252 0 1252 0 -4 188 c-3 176 -5 190 -29 242 -33 70 -89 126 -159 159 l-55 26 -985 2 c-557 1 -1001 -3 -1023 -8z"/>
-                                    <path d="M1264 3998 c21 -193 69 -359 148 -509 59 -114 124 -195 236 -296 93 -85 164 -185 201 -286 l26 -72 5 -1300 c5 -1295 5 -1300 26 -1346 44 -94 123 -157 222 -178 70 -14 658 -15 738 0 103 19 183 81 228 178 21 46 21 50 26 1376 l5 1330 26 66 c49 127 107 206 233 316 123 109 197 210 262 362 36 82 77 250 89 359 l7 62 -1242 0 -1243 0 7 -62z m1374 -1218 c71 -36 115 -83 149 -158 34 -72 30 -192 -7 -265 -62 -123 -194 -187 -337 -165 -72 11 -129 44 -181 103 -51 58 -72 119 -72 209 0 122 61 220 172 276 52 26 72 30 138 30 66 0 86 -4 138 -30z"/>
-                                </svg>                                
+                                <img src="./assets/flashlight.svg" alt="">                            
                             </div>
                         </div>
                         <div id="pill" class="box-border w-[146px] h-1 bg-white rounded-full absolute bottom-[12px] left-[123px]"></div>
