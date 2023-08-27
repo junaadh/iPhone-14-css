@@ -232,23 +232,23 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(response => response.json())
         .then(data => {
-            const jsonData = JSON.parse(data);
+            // const jsonData = JSON.parse(data);
             if (!data.item) {
                 console.log('No track currently playing.');
                 return;
             }
-            const currentTrack = jsonData.item;
+            const currentTrack = data.item;
             cover.src = currentTrack.album.images[0].url;
             trackName.textContent = currentTrack.name;
             artistName.textContent = currentTrack.artists.map(artist => artist.name).join(', ');
-            const progress = jsonData.progress_ms;
+            const progress = data.progress_ms;
             const duration = currentTrack.duration_ms;
             const remaining = duration - progress;
             length.textContent = convertMsToMinsAndSecs(remaining, true);
             elapsed.textContent = convertMsToMinsAndSecs(progress, false);
             const percentage = Math.round((progress / duration) * 100);
             scrubber.style.width = `${percentage}%`;
-            const playing = jsonData.is_playing === true ? true : false;
+            const playing = data.is_playing === true ? true : false;
             if (!playing) {
                 playIcon.classList.remove("hidden");
                 pauseIcon.classList.add("hidden");
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function getBatteryLevel() {
         navigator.getBattery()
             .then((battery) => {
-                const level = battery.level * 100;
+                const level = Math.round(battery.level * 100);
                 const isCharging = battery.charging;
                 batteryPer.innerHTML = isCharging && level != 100 ? level + chargingSvg : level;
                 batteryIndicator.style.width = `${level}%`;
